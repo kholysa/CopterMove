@@ -8,6 +8,7 @@ class CopterMove:
         self.localisation = Localisation()
         self.pathPlan = PathPlan(start,goal,barriers, display)
         bebop.safe_takeoff(10)
+        self.OrientCopter(start)
 
     def Move(self):
         for target in self.pathPlan.getResult():
