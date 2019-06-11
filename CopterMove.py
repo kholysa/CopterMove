@@ -10,7 +10,7 @@ class CopterMove:
         bebop.safe_takeoff(10)
 
     def Move(self):
-        for target in self.pathPlan.result:
+        for target in self.pathPlan.getResult():
             self.bebop.move_relative(target[1], target[0], 0, 0)
             self.OrientCopter(target)
         self.bebop.safe_land(10)

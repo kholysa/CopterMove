@@ -14,3 +14,6 @@ class PathPlan:
         nextStep = self.result[self.index]
         self.index += 1
         return nextStep
+
+    def getResult(self):
+        return self.result
