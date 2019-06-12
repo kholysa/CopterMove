@@ -1,5 +1,6 @@
 from PathPlanning.AStarRosetta import AStarGraph, AStarSearch
 
+
 class PathPlan:
 
     def __init__(self, start, goal, barriers, display):

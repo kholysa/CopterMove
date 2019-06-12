@@ -13,7 +13,7 @@ if __name__ == "__main__":
 
     print("connecting")
     success = bebop.connect(10)
-    if (success):
+    if success:
         print("Successfully connected to the Bebop. Starting ")
         start = (4, 5)
         end = (7, 7)

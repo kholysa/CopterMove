@@ -2,11 +2,12 @@ from Localisation import Localisation
 from PathPlan import PathPlan
 import numpy
 
+
 class CopterMove:
-    def __init__(self, bebop,start, goal, barriers, display=False):
+    def __init__(self, bebop, start, goal, barriers, display=False):
         self.bebop = bebop
         self.localisation = Localisation()
-        self.pathPlan = PathPlan(start,goal,barriers, display)
+        self.pathPlan = PathPlan(start, goal, barriers, display)
         bebop.safe_takeoff(10)
         self.OrientCopter(start)
 
@@ -15,7 +16,6 @@ class CopterMove:
             self.bebop.move_relative(target[1], target[0], 0, 0)
             self.OrientCopter(target)
         self.bebop.safe_land(10)
-
 
     def OrientCopter(self, expectedLocation):
         realLocation = Localisation.GetPosition()
