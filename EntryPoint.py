@@ -7,20 +7,6 @@ Author: Amy McGovern
 from pyparrot.Bebop import Bebop
 from CopterMove import CopterMove
 
-# iterResult = iter(result)
-# next(iterResult)
-# bebop.move_relative(0, 0, 0, math.radians(-90))
-#
-# for target in result:
-#     # dx = target[0] - currentPosition[0]
-#     # dy = target[1] - currentPosition[1]
-#     # bebop.fly_direct(0,10*dx,0,0,1)
-#     # bebop.fly_direct(10*dy,0,0,0,1)
-#     bebop.move_relative(-target[0], target[1], 0, 0)
-#     currentPosition = target
-#
-
-print("DONE - disconnecting")
 
 if __name__ == "__main__":
     bebop = Bebop(ip_address="10.202.0.1")
