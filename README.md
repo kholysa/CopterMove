@@ -1,7 +1,7 @@
-#CopterMove
+# CopterMove
 A python script to move a Bebop 2 drone. Uses the PathPlanning library to avoid obstacles
 
-##Installation
+## Installation
 
 Requires:
  - Python 3.6
@@ -26,14 +26,14 @@ Requires:
 
     a) Run this command `pip install matplotlib path-planning-kholysa` to install the required packages for path planning.
     
-##Running
+## Running
 Run the `EntryPoint.py` script with your python interpreter. Make sure you connect to a drone (simulated or real). Make sure you have enough physical space for real drones.
 
-###Physical Drones
+### Physical Drones
 
 Make sure your device has a wifi network adapter and can connet to the drone's wifi network
 
-###Virtual Drones
+### Virtual Drones
  
 IP address should be specified when connecting to a virtual drone. Look at the Sphinx-Parrot software for how to start a simulated drone
 - `bebop = Bebop(ip_address="10.202.0.1")`
