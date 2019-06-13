@@ -1,5 +1,5 @@
 from PathPlanning.AStarRosetta import AStarGraph, AStarSearch
-
+import numpy
 
 class PathPlan:
 
@@ -10,11 +10,14 @@ class PathPlan:
         self.graph = AStarGraph(barriers)
         self.result, self.cost, self.path = AStarSearch(start, goal, self.graph, display)
         self.index = 0
+        self.prevCoordinate = start
 
-    def getNextMove(self):
+    def getNextCoordinate(self):
         nextStep = self.result[self.index]
+        nextCoordinate = numpy.add(self.prevCoordinate, nextStep)
+        self.prevCoordinate = nextCoordinate
         self.index += 1
-        return nextStep
+        return nextCoordinate
 
     def getResult(self):
         return self.result
