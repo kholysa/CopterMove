@@ -1,6 +1,9 @@
 # CopterMove
 A python script to move a Bebop 2 drone. Uses the PathPlanning library to avoid obstacles
 
+## System Overview
+![System overview](/Figures/Copter%20Move.jpg)
+
 ## Installation
 
 Requires:
