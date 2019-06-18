@@ -12,8 +12,8 @@ class PathPlan:
         self.index = 0
 
     def getNextMove(self):
-        nextStep = self.result[self.index]
         self.index += 1
+        nextStep = self.path[self.index]
         return nextStep
 
     def getResult(self):
