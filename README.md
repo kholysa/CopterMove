@@ -1,6 +1,9 @@
 # CopterMove
 A python script to move a Bebop 2 drone. Uses the PathPlanning library to avoid obstacles
 
+## System Overview
+![System overview](/Figures/Copter%20Move.jpg)
+
 ## Installation
 
 Requires:
@@ -14,7 +17,7 @@ Requires:
     
     b) Run this command `cd venvName` to move into the virtual environement.
 
-    c) Run this command `source tutorial-env/bin/activate` to source the virtual environment's python installation. Your terminal should now show your `venvName` before each line.
+    c) Run this command `source bin/activate` to source the virtual environment's python installation. Your terminal should now show your `venvName` before each line.
     
  2) Install the requried pip packages. Run the Instructions below *_OR_* follow this guide https://pyparrot.readthedocs.io/en/latest/installation.html
 
