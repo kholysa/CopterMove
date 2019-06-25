@@ -93,7 +93,8 @@ Requires:
  b) sphinx /opt/parrot-sphinx/usr/share/sphinx/drones/bebop2.drone
 
 Troubleshooting:
-You may run into an issue where you can't start sphinx without the `sudo` command. *FIND FIX LINK*
+- You may run into an issue where you can't start sphinx without the `sudo` command. *FIND FIX LINK*
+- Depending on your ubuntu distibution, you may need to run `sudo apt-get install libatomic1`
 
 - `bebop = Bebop(ip_address="10.202.0.1")`
 This simulation is considered a SITL (Software in the Loop). Parrot does not currently support HITL (Hardware in the Loop)
