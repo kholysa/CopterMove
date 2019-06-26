@@ -51,7 +51,7 @@ Requires:
     a) Run this command `pip install matplotlib path-planning-kholysa` to install the required packages for path planning.
 
 ## Running
-Run the `EntryPoint.py` script with your python interpreter. Make sure you connect to a drone (simulated or real). Make sure you have enough physical space for real drones.
+Run the `EntryPoint.py` script with your python interpreter. Make sure you use a python interpreter with the installed libraries (`source bin/activate` if you are using virtual environements). Make sure you connect to a drone (simulated or real). Make sure you have enough physical space for real drones.
 
 ### Paramters
 All units are in SI Standard Units (meters, seconds...)
