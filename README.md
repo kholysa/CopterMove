@@ -6,6 +6,8 @@ A python script to move a Bebop 2 drone. Uses the PathPlanning library to avoid 
 
 ## Installation
 
+Windows commands should be run on the command prompt. Linux & MacOS commands should be run in the terminal.
+
 Requires:
  - Python 3.6
  - pip
@@ -31,27 +33,24 @@ Requires:
     a) Run this command `pip install matplotlib path-planning-kholysa` to install the required packages for path planning.
 
 ### Windows
+  0) Download (or git clone) the repository. Extract the files to a location in your computer
 
- 1) Create a python virtual environment somewhere in your documents. Run the Instructions below *_OR_* follow this guide https://docs.python.org/3/tutorial/venv.html
- 
-    a) Run this command `pip install virtualenv` to install the virtualenv tool.
-    
-    b) Run this command `virtualenv myenv` to create a virtual environment.
+ 1) Create a python virtual environment in the directory with the repository's files. Run the Instructions below *_OR_* follow this guide https://docs.python.org/3/tutorial/venv.html
+       
+    a) Run this command `python -m venv myenv` to create a virtual environment.
 
-    c) Run this command `myenv\Scripts\activate` to source the virtual environment's python installation. Your terminal should now show your `myenv` before each line.
+    b) Run this command `myenv\Scripts\activate` to source the virtual environment's python installation. Your terminal should now show your `myenv` before each line.
     
  2) Install the requried pip packages. Run the Instructions below *_OR_* follow this guide https://pyparrot.readthedocs.io/en/latest/installation.html
-
-    a) Run this command `which pip`. Make sure the output points to a file that is in your venv.
-    
-    b) Run this command `pip install untangle zeroconf pyparrot` to install the required packages.
+ 
+    a) Run this command `pip install --user untangle zeroconf pyparrot` to install the required packages.
     
  3) Install the path-planning (kholysa) package along with matplotlib 
 
-    a) Run this command `pip install matplotlib path-planning-kholysa` to install the required packages for path planning.
+    a) Run this command `pip install --user matplotlib path-planning-kholysa` to install the required packages for path planning.
 
 ## Running
-Run the `EntryPoint.py` script with your python interpreter. Make sure you use a python interpreter with the installed libraries (`source bin/activate` if you are using virtual environements). Make sure you connect to a drone (simulated or real). Make sure you have enough physical space for real drones.
+Run the `EntryPoint.py` script with your python interpreter. Make sure you use a python interpreter with the installed libraries (`source bin/activate` for Linux, `myenv\Scripts\activate` for windows). Make sure you connect to a drone (simulated or real). Make sure you have enough physical space for real drones.
 
 ### Paramters
 All units are in SI Standard Units (meters, seconds...)
