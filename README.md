@@ -14,6 +14,8 @@ Requires:
  - python venv
 
 ### Linux and MacOS environments
+ 0) Download (or git clone) the repository. Extract the files to a location in your computer
+
  1) Create a python virtual environment somewhere in your documents. Run the Instructions below *_OR_* follow this guide https://docs.python.org/3/tutorial/venv.html
  
     a) Run this command `python3 -m venv venvName` to create a python3 virtual environment.
@@ -35,7 +37,7 @@ Requires:
 ### Windows
   0) Download (or git clone) the repository. Extract the files to a location in your computer
 
- 1) Create a python virtual environment in the directory with the repository's files. Run the Instructions below *_OR_* follow this guide https://docs.python.org/3/tutorial/venv.html
+ 1) Create a python virtual environment in the directory with the repository's files. Run the Instructions *in the directory with the reposity's files* below *_OR_* follow this guide https://docs.python.org/3/tutorial/venv.html
        
     a) Run this command `python -m venv myenv` to create a virtual environment.
 
