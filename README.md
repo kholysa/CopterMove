@@ -57,6 +57,8 @@ Run the `EntryPoint.py` script with your python interpreter. Make sure you use a
 ### Paramters
 All units are in SI Standard Units (meters, seconds...)
 
+All parameters are in EntryPoint.py
+
 - Start: Starting Position of the copter. Must be an integer number * step size away from the Goal.
 e.g. Start = (6.3, 8.1) Step Size = 0.5, Goal = (9.8,2.6) Goal _*CANNOT*_ be something like (9.9,2.3)
 
