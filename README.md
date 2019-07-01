@@ -45,11 +45,11 @@ Requires:
     
  2) Install the requried pip packages. Run the Instructions below *_OR_* follow this guide https://pyparrot.readthedocs.io/en/latest/installation.html
  
-    a) Run this command `pip install --user untangle zeroconf pyparrot` to install the required packages.
+    a) Run this command `pip install untangle zeroconf pyparrot` to install the required packages.
     
  3) Install the path-planning (kholysa) package along with matplotlib 
 
-    a) Run this command `pip install --user matplotlib path-planning-kholysa` to install the required packages for path planning.
+    a) Run this command `pip install matplotlib path-planning-kholysa` to install the required packages for path planning.
 
 ## Running
 Run the `EntryPoint.py` script with your python interpreter. Make sure you use a python interpreter with the installed libraries (`source bin/activate` for Linux, `myenv\Scripts\activate` for windows). Make sure you connect to a drone (simulated or real). Make sure you have enough physical space for real drones.
