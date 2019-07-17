@@ -101,3 +101,13 @@ Troubleshooting:
 
 - `bebop = Bebop(ip_address="10.202.0.1")`
 This simulation is considered a SITL (Software in the Loop). Parrot does not currently support HITL (Hardware in the Loop)
+
+#### Git usage
+Use git and the git commands to safely store the files in the cloud (on github).
+Follow these steps to not cause any conflicts when getting files from the cloud
+
+1- `git pull` Run this command in the command line to get the latest files from the repository *OR* use the tools in PyCharm: VCS -> Git -> Pull Click on the `Pull` in the new window to get the latest file
+
+2- Do your work and save. If you modify any files or add new graphs to the excel sheet. Make sure to SAVE AND CLOSE your files
+
+3- `git commit -m "Insert your message here" && git push` Run these commands in the command line to update the repository on github *OR* use the tools in PyCharm: VCS -> Commit (`Ctrl+k`). Add your commit message. Commit and Push your changes to the repository by pressing on the arrow next to the commit button (`Ctrl+Alt+k`)
