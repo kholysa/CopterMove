@@ -32,8 +32,9 @@ if __name__ == "__main__":
         start = (1, 2)
         end = (2, 8)
         barriers = initBarriers()
+        scale = 1
         try:
-            cm = CopterMove(bebop, start, end, barriers, display=True)
+            cm = CopterMove(bebop, start, end, barriers, scale, display=True)
             cm.Move()
             bebop.disconnect()
         except:
