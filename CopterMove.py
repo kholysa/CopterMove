@@ -26,9 +26,9 @@ class CopterMove:
 
     def OrientCopter(self, expectedLocation):
         self.bebop.smart_sleep(5)
-        # realLocation = Localisation.GetPosition()
+        realLocation = Localisation.GetPosition()
         print('Expected location ' + str(numpy.divide(expectedLocation,self.scale)))
-        # print('Real location ' + str(realLocation))
-        # error = numpy.subtract(realLocation, expectedLocation)
-        # print('Error ' + str(error))
-        # self.bebop.move_relative(-error[1], -error[0], 0, 0)
+        print('Real location ' + str(realLocation))
+        error = numpy.subtract(realLocation, numpy.divide(expectedLocation,self.scale))
+        print('Error ' + str(error))
+        self.bebop.move_relative(-error[1], -error[0], 0, 0)

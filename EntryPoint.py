@@ -22,7 +22,7 @@ def initBarriers():
     return barriers
 
 if __name__ == "__main__":
-    bebop = Bebop(ip_address="10.202.0.1")
+    bebop = Bebop()
 
     print("connecting")
     success = bebop.connect(2)
