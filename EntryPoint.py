@@ -8,38 +8,17 @@ from pyparrot.Bebop import Bebop
 from CopterMove import CopterMove
 from Localisation import Localisation
 
-def initBarriers(stepSizeBarriers):
-    barriers = list()
-    barrierA = list()
-    barrierB = list()
-    barrierC = list()
-    for i in range(21):
-        stepSize = round(i * stepSizeBarriers, 2)
-        barrierA.append((stepSize, 5.0))
+def initBarriers():
+    barriers = [
+        [(2, 5), (1, 5), (0, 5)],
 
-    for i in range(21):
-        stepSize = round(i * stepSizeBarriers, 2)
-        barrierB.append((4.0, 3 + stepSize))
+        [(4, 3), (4, 4), (4, 5)],
 
-    for i in range(21):
-        stepSize = round(i * stepSizeBarriers, 2)
-        barrierC.append((2.0, 4 + stepSize))
-
-    for i in range(31):
-        stepSize = round(i * stepSizeBarriers, 2)
-        barrierC.append((2 + stepSize, 6.0))
-
-    for i in range(41):
-        stepSize = round(i * stepSizeBarriers, 2)
-        barrierC.append((5.0, 6 - stepSize))
-
-    for i in range(21):
-        stepSize = round(i * stepSizeBarriers, 2)
-        barrierC.append((3 + stepSize, 2.0))
-
-    barriers.append(barrierA)
-    barriers.append(barrierB)
-    barriers.append(barrierC)
+        [(2, 4), (2, 5), (2, 6),
+          (3, 6), (4, 6), (5, 6),
+          (5, 5), (5, 4), (5, 3), (5, 2),
+          (4, 2), (3, 2)]
+     ]
     return barriers
 
 if __name__ == "__main__":
@@ -50,12 +29,11 @@ if __name__ == "__main__":
 
     if success:
         print("Successfully connected to the Bebop. Starting ")
-        start = (2.8, 2.9)
-        end = (2.8, 7.9)
-        stepSizeDrone = 0.1
-        barriers = initBarriers(stepSizeDrone)
+        start = (1, 2)
+        end = (2, 8)
+        barriers = initBarriers()
         try:
-            cm = CopterMove(bebop, start, end, barriers, stepSizeDrone, display=True)
+            cm = CopterMove(bebop, start, end, barriers, display=True)
             cm.Move()
             bebop.disconnect()
         except:
