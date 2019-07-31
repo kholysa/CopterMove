@@ -12,6 +12,7 @@ class CopterMove:
         bebop.set_max_altitude(1.4)
         bebop.safe_takeoff(10)
         bebop.move_relative(0, 0, -0.6,0 )
+        self.OrientCopter(start)
 
     def setScaleFactor(self,scale):
         self.scale = scale

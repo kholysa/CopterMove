@@ -3,7 +3,6 @@ import numpy
 
 class PathPlan:
 
-    stepSize = 0.1
     def __init__(self, start, goal, barriers, display):
         self.goal = goal
         self.barriers = barriers
