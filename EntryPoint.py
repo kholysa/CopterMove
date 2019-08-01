@@ -24,7 +24,7 @@ def initBarriers():
     barrier1 = []
     for i in range(20):
         for j in range(10):
-            barrier1.append((27+i,45+j))
+            barrier1.append((20+i,32+j))
 #    barrier2 = []
 #    for i in range(20):
 #        for j in range(10):
@@ -42,8 +42,8 @@ if __name__ == "__main__":
 
     if success:
         print("Successfully connected to the Bebop. Starting ")
-        start = (31, 30)
-        end = (31, 80)
+        start = (29, 31)
+        end = (19, 51)
         barriers = initBarriers()
         scale = 10
         try:
@@ -51,7 +51,12 @@ if __name__ == "__main__":
             cm.Move()
             print('Remaining Battery: ',bebop.sensors.battery)
             bebop.disconnect()
-        except:
+        except Exception as e:
+            print('\n\n---------------\nException: ',e)
+            print('\n---------------\n\n')
+            bebop.emergency_land()
+            bebop.disconnect()
+        except KeyboardInterrupt:
             bebop.emergency_land()
             bebop.disconnect()
     else:
