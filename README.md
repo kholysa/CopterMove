@@ -53,6 +53,7 @@ Requires:
 
 ## Running
 PyParrot Documentation: https://pyparrot.readthedocs.io/en/latest/index.html
+
 Run the `EntryPoint.py` script with your python interpreter. Make sure you use a python interpreter with the installed libraries (`source bin/activate` for Linux, `myenv\Scripts\activate` for windows). Make sure you connect to a drone (simulated or real). Make sure you have enough physical space for real drones.
 
 ### Paramters
